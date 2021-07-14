@@ -1,0 +1,167 @@
+/* importing the fontstyle */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*---------------- common styles ---------------*/
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    margin-top: 50px;
+    background-color: #FFFFFF;
+    width: 1100px;
+}
+h1{
+    font-size: 50px;
+}
+/* -----------------header styling starts-------------- */
+.header-container
+{
+    background-color: blue;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+span{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+.top-button{
+    background-color: crimson;
+    text-decoration: none;
+    padding: 20px;
+    font-weight:700px;
+    color: white;
+}
+.photo-top img{
+    width: 50%;
+    margin: 50px;
+    padding: 20px;
+    height: 90%;
+    width: 90%;
+}
+.photo-frame:hover .photo-top {
+    transform: scale(1.2);
+    transition: transform 3s linear;
+}
+/* styling the footballers */
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+ 
+}
+.player{
+    width: 310px;
+    height:474px;
+    display: inline-block;
+    box-shadow: 1px 1px 10px black;
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+   
+}
+.player img{
+    width:100%;
+}
+.player-detail p{
+    font-family: 'Poppins', sans-serif;
+}
+/* 3rd section decorating */
+.photo-frame{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20pxpx;
+} 
+.photo-detail{
+    width: 50%;
+    margin: 50px;
+    padding: 20px;
+}
+.photo-detail h1{
+
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.photo-detail p{
+    padding-bottom: 20px;
+}
+.photo img{
+    width: 50%;
+    margin: 50px;
+    padding: 20px;
+    height: 90%;
+    width: 90%;
+}
+.anchor-button{
+    text-decoration: none;
+    background-color:purple;
+    padding: 10px 40px;
+    font-weight:700px;
+    color: white;
+}
+
+.photo-frame:hover .photo {
+    transform: scale(1.2) rotate(180deg) skew(-30deg);
+    transition: transform 3s linear;
+}
+/* styling footing */
+footer{
+    background-color: black;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+footer a{
+    color: #FFFFFF;
+}
+footer img{
+    height: 80px;
+    width: 200px;
+}
+/*--------- my media query -----------*/
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .players {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player{
+        flex-direction: column;
+    }
+    
+}
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
