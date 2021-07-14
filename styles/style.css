@@ -126,7 +126,7 @@ span{
     transform: scale(1.2) rotate(180deg) skew(-30deg);
     transition: transform 3s linear;
 }
-/* styling footing */
+/*----------- styling footing -------------*/
 footer{
     background-color: black;
     color: #FFFFFF;
