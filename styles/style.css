@@ -88,7 +88,7 @@ span{
     font-family: 'Poppins', sans-serif;
 }
 /* 3rd section decorating */
-.photo-frame{
+.check{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -148,11 +148,11 @@ footer img{
     .container{
         width: 100%;
     }
-    .players {
+    .players , .photo-frame {
         grid-template-columns: repeat(1,1fr);
     }
-    .player{
-        flex-direction: column;
+    .player , .check{
+        flex-direction: column; 
     }
     
 }
@@ -160,7 +160,7 @@ footer img{
     .container{
         width: 100%;
     }
-    .players{
+    .players {
         grid-template-columns: repeat(2,1fr);
     }
     
